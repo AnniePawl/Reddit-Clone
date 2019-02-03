@@ -32,6 +32,9 @@ app.get('/posts/new', (req, res) => {
 // CREATE posts route
 const posts = require('./controllers/posts')
 
+// DATABASE
+require('./data/reddit-db');
+
 
 //Server Start
 app.listen(3000, () => {
