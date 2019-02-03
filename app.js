@@ -22,6 +22,9 @@ app.get('/posts/new', (req, res) => {
     res.render('posts-new', {});
 })
 
+// CREATE posts route
+const posts = require('./controllers/posts')
+
 
 //Server Start
 app.listen(3000, () => {
