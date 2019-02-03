@@ -17,6 +17,12 @@ app.get('/',(req, res) => {
     res.render('home', { msg: 'Handlebars Are Okay'});
 })
 
+// NEW (post)
+app.get('/posts/new', (req, res) => {
+    res.render('posts-new', {});
+})
+
+
 //Server Start
 app.listen(3000, () => {
     console.log('App listneing on port 3000 yay')

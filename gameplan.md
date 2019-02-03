@@ -9,15 +9,20 @@
 - Implement more intricate CRUD tests
 
 ## Technical Planning
-- Create a post
-- Show all posts
-- Comment on posts
-- Create subreddit
-- Create a post on a subreddit
-- Show all subreddits
-- Sign up
-- Login
-- Associate posts, comments, and votes with their author
-- Make comments on posts
-- Vote a post up or down
-- Search 
+1. *Create a post*
+    - Make post route(`/posts/new`) and templates(`posts-new.handlebars`)
+    - Add form to `posts-new` template
+    - Make `create` posts route, check that form data sends
+    - Add `Post` model w/ Mongoose
+    - Confirm posts save to database
+2. Show all posts
+3. Comment on posts
+4. Create subreddit
+5. Create a post on a subreddit
+6. Show all subreddits
+7. Sign up
+8. Login
+9. Associate posts, comments, and votes with their author
+10. Make comments on posts
+11. Vote a post up or down
+12. Search
