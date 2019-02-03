@@ -1,12 +1,19 @@
+// EXPRESS MODULES & OBJECTS
+const express = require('express');
+// const methodOverride = require('method-override');
+
+const app = express();
+// const bodyParser = require('body-parser');
+
+
+// HANDLEBARS MATERIAL
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-const express = require('express')
-const app = express()
-
+// INDEX
 app.get('/',(req, res) => {
-    res.render('home' { msg: 'Handlebars Are Okay'});
+    res.render('home', { msg: 'Handlebars Are Okay'});
 })
 
 //Server Start
