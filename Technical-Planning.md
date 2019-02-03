@@ -16,6 +16,10 @@
     - Add `Post` model w/ Mongoose
     - Confirm posts save to database
 2. Show all posts
+    - Make root route `(/)` go to `/posts/index` route, render `posts-index` template
+    - Style template and loop over `posts` object
+    - Make route to `/posts/show` route `(/posts/:id)`
+    - Style template and display `post` object
 3. Comment on posts
 4. Create subreddit
 5. Create a post on a subreddit
