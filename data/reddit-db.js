@@ -1,4 +1,4 @@
-/* Mongoose Connection */
+/* MONGOOSE CONNECTION */
 const mongoose = require("mongoose");
 assert = require("assert");
 
@@ -9,7 +9,7 @@ mongoose.connect(
   { useNewUrlParser: true },
   function(err, db) {
     assert.equal(null, err);
-    console.log("Connected successfully to database");
+    console.log("Fear not, you ARE connected <3");
 
     // db.close(); turn on for testing
   }

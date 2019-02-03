@@ -11,7 +11,7 @@ const expressValidator = require('express-validator');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// Add after body parser initialization
+// Add after body parser initialization!
 app.use(expressValidator());
 
 // HANDLEBARS MATERIAL
