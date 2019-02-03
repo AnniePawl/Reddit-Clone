@@ -1,19 +1,26 @@
+<!-- NEW POSTS FORM -->
+
 <div class="row">
   <div class="col-sm-4 col-sm-offset-4">
+
     <form action="/posts/new" method="post">
       <legend>New Post</legend>
+      <!-- TITLE Section  -->
       <div class="form-group">
         <label for="post-title">Title</label>
         <input type="text" name="title" class="form-control" id="post-title" placeholder="Title">
       </div>
+      <!-- URL Section -->
       <div class="form-group">
         <label for="post-url">Url</label>
         <input type="url" name="url" class="form-control" id="post-url" placeholder="https://www.google.com">
       </div>
+      <!-- SUMMARY Section  -->
       <div class="form-group">
         <label for="post-summary">Summary</label>
         <textarea name="summary" class="form-control" id="post-summary" placeholder="Title"></textarea>
       </div>
+      <!-- Submit BUTTON -->
       <div class='text-right'>
         <button type="submit" class="btn btn-primary">Create Post</button>
       </div>

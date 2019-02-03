@@ -1,9 +1,8 @@
-// Require Post Model
-const Post = require('../models/post');
-
+// POSTs CONTROLLER
 
 module.exports = app => {
-    app.post("post/new", (req, res) => {
-        console.log(req.body);
-    })
-}
+  // CREATE
+  app.post("/posts/new", (req, res) => {
+    console.log(req.body);
+  });
+};
