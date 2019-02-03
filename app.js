@@ -11,7 +11,7 @@ const expressValidator = require('express-validator');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// Add after body parser initialization!
+// EXPRESS VALIDATOR, add after body-parser initalizer
 app.use(expressValidator());
 
 // HANDLEBARS MATERIAL
@@ -19,17 +19,7 @@ var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-// INDEX
-app.get('/',(req, res) => {
-    res.render('home', { msg: 'Handlebars Are Okay'});
-})
-
-// NEW (post)
-app.get('/posts/new', (req, res) => {
-    res.render('posts-new', {});
-})
-
-// CREATE posts route
+// IMPORT ROUTES
 const posts = require('./controllers/posts.js')(app);
 
 // DATABASE
