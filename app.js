@@ -29,3 +29,5 @@ require('./data/reddit-db');
 app.listen(3000, () => {
     console.log('App listneing on port 3000 yay')
 })
+
+module.exports = app;
